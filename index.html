@@ -6,8 +6,13 @@
   <title>Sagar Manthan Parantha Planet</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+
 </head>
 <body>
+  
   <!-- Intro Animation -->
   <div id="intro">
     <img src="images/logo.png" alt="Logo" class="logo" />
@@ -15,6 +20,11 @@
 
   <!-- Main Content -->
   <div id="content" class="hidden">
+    <!-- Glowing Discount Badge -->
+<div class="discount-circle">
+  50% OFF<br>On Every Item
+</div>
+
     <header class="header-wrapper">
       <div class="header-content">
         <img src="images/logo.png" alt="Logo" class="small-logo" />
@@ -77,34 +87,29 @@
     </section>
 
     <footer>
-      <!-- For More Orders -->
+
       <div class="category">
         <h3>For Orders</h3>
-        <a href="tel:+918283000636" class="btn call">Call Now</a>
-        <a href="https://wa.me/918283000636" class="btn whatsapp">Order on WhatsApp</a>
+        <a href="tel:+918283000636" class="btn call">
+          <span class="telephone-icon">☎</span> Call Now
+        </a>
+        
+        <a href="https://wa.me/918283000636" class="btn whatsapp"><i class="fab fa-whatsapp"></i>WhatsApp</a>
       </div>
 
-      <!-- Follow Our Page -->
       <div class="category">
         <h3>Follow Our Page</h3>
-        <a href="https://instagram.com/sagar_manthan_paratha_planet" class="btn insta" target="_blank">Instagram</a>
+        <a href="https://instagram.com/sagar_manthna_paratha_planet" class="btn insta"><i class="fab fa-instagram"></i>Instagram</a>
       </div>
 
-      <!-- For More Info -->
       <div class="category">
         <h3>For More Info</h3>
-        <a href="https://chat.whatsapp.com/FZcUPwu2n6EIT4tE6xeJJj" class="btn join-group" target="_blank">Join Our WhatsApp Group</a>
+        <a href="https://chat.whatsapp.com/your-group-link" class="btn join-group"><i class="fas fa-users"></i>Join our Whatsapp Group</a>
       </div>
     </footer>
   </div>
-
-  <script>
-    window.onload = () => {
-      setTimeout(() => {
-        document.getElementById('intro').style.display = 'none';
-        document.getElementById('content').classList.remove('hidden');
-      }, 3000);
-    };
-  </script>
+   <!-- External JS -->
+  <script src="script.js"></script>
 </body>
 </html>
+
