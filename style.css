@@ -7,10 +7,18 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #fffaf4;
+  background-color: #f7f1e1; /* Soft Cream */
   color: #333;
   overflow-x: hidden;
 }
+
+.menu {
+  padding: 2rem;
+  animation: slideIn 0.8s ease;
+  background-color: #f7f1e1; /* Soft Cream */
+}
+
+
 
 /* INTRO SCREEN */
 #intro {
@@ -113,11 +121,8 @@ body {
   }
 }
 
-/* MENU SECTION */
-.menu {
-  padding: 2rem;
-  animation: slideIn 0.8s ease;
-}
+
+
 
 .menu h3 {
   margin-top: 2rem;
@@ -247,6 +252,9 @@ footer {
   font-size: 1.0rem;
   margin-right: 10px;
   color: white;
+}
+.menu-heading {
+  font-family: 'Algerian', serif !important;
 }
 
 
