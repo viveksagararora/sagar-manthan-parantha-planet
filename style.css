@@ -253,8 +253,23 @@ footer {
   margin-right: 10px;
   color: white;
 }
+/* HEADER */
 .menu-heading {
+  font-size: 5rem; /* Increased font size */
   font-family: 'Algerian', serif !important;
+  color: #d34300;
+  text-align: left;
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start; /* Aligning to the left */
+  padding-left: 20px; /* Adding some space to the left */
 }
 
-
+/* RESPONSIVE - For Mobile Devices */
+@media screen and (max-width: 768px) {
+  .menu-heading {
+    font-size: 3.5rem; /* Adjusted size for mobile devices */
+    text-align: left; /* Ensures it's aligned to the left */
+    padding-left: 15px; /* Added padding for better alignment */
+  }
+}
