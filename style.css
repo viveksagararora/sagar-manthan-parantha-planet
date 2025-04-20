@@ -44,6 +44,7 @@ body {
   display: flex;
   align-items: center;
   padding: 1rem;
+  position: relative;
 }
 
 .header-content {
@@ -54,11 +55,11 @@ body {
 }
 
 .small-logo {
-  width: 120px;
-  height: 120px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   object-fit: cover;
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 
 .menu-heading {
@@ -69,6 +70,47 @@ body {
   flex-grow: 1;
   display: flex;
   justify-content: center;
+}
+
+
+/* Discount Badge Adjustments */
+.discount-circle {
+  position: absolute;
+  top: 90px; /* Move the badge slightly downwards */
+  right: 20px; /* Align the badge to the right of the logo */
+  width: 110px;
+  height: 110px;
+  background: radial-gradient(circle, #fce4ec 30%, #f8bbd0 100%); /* Light pink gradient */
+  color: rgb(7, 1, 1);
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #f8bbd0, 0 0 20px #f8bbd0; /* Soft glow with light pink */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 9999;
+  animation: floatGlow 3s ease-in-out infinite;
+  padding: 10px;
+  text-shadow: none;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Badge Floating Animation */
+@keyframes floatGlow {
+  0% {
+    transform: translateY(0);
+    box-shadow: 0 0 15px #f8bbd0;
+  }
+  50% {
+    transform: translateY(-8px);
+    box-shadow: 0 0 30px #f8bbd0, 0 0 60px #f8bbd0;
+  }
+  100% {
+    transform: translateY(0);
+    box-shadow: 0 0 15px #f8bbd0;
+  }
 }
 
 /* MENU SECTION */
@@ -98,9 +140,10 @@ body {
   padding: 10px 0;
   font-size: 1.5rem;
   border-bottom: 1px dashed #ccc;
+  font-weight: 600;
 }
 
-/* FOOTER BUTTONS */
+/* FOOTER */
 footer {
   display: flex;
   flex-direction: column;
@@ -130,6 +173,14 @@ footer {
   color: white;
   transition: transform 0.3s ease, background-color 0.3s;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: inline-flex;
+  align-items: center;
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.btn i {
+  margin-right: 8px;
 }
 
 .call { background-color: #ff7e47; }
@@ -142,7 +193,7 @@ footer {
   background-color: #d34300;
 }
 
-/* RESPONSIVE STYLES */
+/* RESPONSIVE */
 @media screen and (max-width: 768px) {
   .menu {
     padding: 1rem;
@@ -174,12 +225,28 @@ footer {
   }
 
   .small-logo {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
   }
 
   .btn {
-    width: 100%;
+    width: 90%;
     padding: 12px;
+    justify-content: center;
+  }
+
+  .discount-circle {
+    width: 90px;
+    height: 90px;
+    font-size: 0.9rem;
+    padding: 8px;
   }
 }
+/* Fix for Call Icon */
+.telephone-icon {
+  font-size: 1.0rem;
+  margin-right: 10px;
+  color: white;
+}
+
+
