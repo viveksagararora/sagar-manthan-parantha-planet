@@ -255,14 +255,18 @@ footer {
   background: linear-gradient(90deg, #ff9966, #ff5e62);
   color: white;
   text-align: center;
-  font-size: 0.95rem;
-  padding: 10px 12px; /* This prevents text from breaking into multiple lines */
+  font-size: 1.3rem;
+  padding: 12px;
   margin: 0 0rem 1.5rem 0rem;
   border-radius: 12px;
   font-weight: bold;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   animation: pulse 2.5s infinite ease-in-out;
+  white-space: normal;      /* Allow text to wrap */
+  overflow: visible;        /* Show full content */
+  text-overflow: unset;     /* Disable trimming with ellipsis */
 }
+
 
 @keyframes pulse {
   0% { transform: scale(1); opacity: 1; }
