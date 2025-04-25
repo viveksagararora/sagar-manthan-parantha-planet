@@ -262,11 +262,7 @@ footer {
   font-weight: bold;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   animation: pulse 2.5s infinite ease-in-out;
-  white-space: normal;      /* Allow text to wrap */
-  overflow: visible;        /* Show full content */
-  text-overflow: unset;     /* Disable trimming with ellipsis */
 }
-
 
 @keyframes pulse {
   0% { transform: scale(1); opacity: 1; }
