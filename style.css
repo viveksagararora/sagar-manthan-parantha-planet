@@ -251,3 +251,29 @@ footer {
   margin-right: 10px;
   color: white;
 }
+.discount-banner {
+  background: linear-gradient(90deg, #ff9966, #ff5e62);
+  color: white;
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 12px;
+  margin: 0 1rem 1.5rem 1rem;
+  border-radius: 12px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  animation: pulse 2.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.03); opacity: 0.95; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@media screen and (max-width: 768px) {
+  .discount-banner {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+
