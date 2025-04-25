@@ -257,8 +257,6 @@ footer {
   text-align: center;
   font-size: 0.95rem;
   padding: 10px 12px; /* This prevents text from breaking into multiple lines */
-  overflow: hidden;
-  text-overflow: ellipsis;
   margin: 0 0rem 1.5rem 0rem;
   border-radius: 12px;
   font-weight: bold;
